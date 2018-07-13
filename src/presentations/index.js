@@ -1,2 +1,2 @@
-export { default as presentation } from './Presentation'
-export { default as presentation2 } from './Presentation2'
+export { default as Presentation } from './Presentation'
+export { default as Presentation2 } from './Presentation2'

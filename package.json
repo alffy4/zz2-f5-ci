@@ -13,15 +13,19 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "lint": "eslint src",
-    "lint:fix": "eslint src --fix"
+    "lint:fix": "eslint src --fix",
+    "pregenerate:thumbnails": "rm src/assets/*",
+    "generate:thumbnails": "babel-node --presets env utils/generateThumbnails.js"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.6",
     "eslint": "^5.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.10.0",
-    "prettier": "^1.13.7"
+    "prettier": "^1.13.7",
+    "puppeteer": "^1.6.0"
   }
 }

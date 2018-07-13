@@ -9,7 +9,12 @@ export default () => (
     <Switch>
       <Route exact path="/" component={Home} />
       {Object.entries(presentations).map(([routeName, Component]) => (
-        <Route key={routeName} exact path={`/${routeName}`} component={Component} />
+        <Route
+          key={routeName}
+          exact
+          path={`/${routeName}`}
+          component={Component}
+        />
       ))}
       <Route component={NotFound} />
     </Switch>
