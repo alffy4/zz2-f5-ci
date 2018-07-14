@@ -15,9 +15,12 @@ const main = async () => {
   const browser = await puppeteer.launch()
   for (let routeName of files) {
     const page = await browser.newPage()
-    await page.goto(`http://localhost:3000/${routeName}`)
-    await page.screenshot({
-      path: `${__dirname}/../src/assets/thumbnails/${routeName}.jpg`,
+    await page.goto(`http://localhost:3000/${routeName}/#/?export`)
+    await page.pdf({
+      path: `${__dirname}/../src/assets/pdf/${routeName}.pdf`,
+      printBackground: true,
+      landscape: true,
+      format: 'Letter',
     })
   }
   await browser.close()

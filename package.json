@@ -14,8 +14,10 @@
     "test": "react-scripts test --env=jsdom",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "pregenerate:thumbnails": "rm src/assets/*",
-    "generate:thumbnails": "babel-node --presets env utils/generateThumbnails.js"
+    "pregenerate:thumbnails": "rm -f src/assets/thumbnails/*",
+    "generate:thumbnails": "babel-node --presets env utils/generateThumbnails.js",
+    "pregenerate:pdf": "rm -f src/assets/pdf/*",
+    "generate:pdf": "babel-node --presets env utils/generatePdf.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
