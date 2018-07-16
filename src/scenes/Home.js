@@ -11,8 +11,8 @@ const Items = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
-  paddingTop: 30,
-  paddingBottom: 30,
+  paddingTop: 20,
+  paddingBottom: 20,
 })
 
 const Item = styled('div')({
@@ -83,7 +83,7 @@ export default () => (
         ({ name, title, description, url, tags }) => (
           <Item key={name}>
             <ImageContainer>
-              <a href={`${url}/`}>
+              <a href={`${url}/`} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={`${
                     process.env.PUBLIC_URL
@@ -102,7 +102,9 @@ export default () => (
 
             <Title>{title}</Title>
             {description && <Description>{description}</Description>}
-            {tags && <Tags>{tags.map(tag => <Tag key={tag}>{tag}</Tag>)}</Tags>}
+            {tags && (
+              <Tags>{tags.map(tag => <Tag key={tag}>#{tag}</Tag>)}</Tags>
+            )}
           </Item>
         )
       )}
