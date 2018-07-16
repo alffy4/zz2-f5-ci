@@ -7,3 +7,11 @@
 body {
     background-color: #fafafa;
 }
+
+a {
+    color: #455A64;
+}
+
+a:hover {
+    color: #2196F3;
+}

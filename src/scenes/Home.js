@@ -1,8 +1,11 @@
 import React from 'react'
 import styled from 'react-emotion'
 import * as presentations from 'scenes/presentations'
+import Footer from 'components/Footer'
 
-const Container = styled('div')({
+const Container = styled('div')({})
+
+const Items = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
@@ -56,20 +59,23 @@ const Tag = styled('div')({
 
 export default () => (
   <Container>
-    {Object.values(presentations).map(
-      ({ name, title, description, url, tags }) => (
-        <Item key={name}>
-          <a href={`${url}/`}>
-            <Image
-              src={`${process.env.PUBLIC_URL}/assets/thumbnails/${name}.jpg`}
-              alt={title}
-            />
-          </a>
-          <Title>{title}</Title>
-          <Description>{description}</Description>
-          <Tags>{tags.map(tag => <Tag key={tag}>{tag}</Tag>)}</Tags>
-        </Item>
-      )
-    )}
+    <Items>
+      {Object.values(presentations).map(
+        ({ name, title, description, url, tags }) => (
+          <Item key={name}>
+            <a href={`${url}/`}>
+              <Image
+                src={`${process.env.PUBLIC_URL}/assets/thumbnails/${name}.jpg`}
+                alt={title}
+              />
+            </a>
+            <Title>{title}</Title>
+            <Description>{description}</Description>
+            <Tags>{tags.map(tag => <Tag key={tag}>{tag}</Tag>)}</Tags>
+          </Item>
+        )
+      )}
+    </Items>
+    <Footer />
   </Container>
 )
