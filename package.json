@@ -14,20 +14,24 @@
     "test": "react-scripts test --env=jsdom",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "pregenerate:thumbnails": "rm -f src/assets/thumbnails/*",
-    "generate:thumbnails": "babel-node --presets env utils/generateThumbnails.js",
-    "pregenerate:pdf": "rm -f src/assets/pdf/*",
-    "generate:pdf": "babel-node --presets env utils/generatePdf.js"
+    "pregenerate:thumbnails": "rimraf src/assets/thumbnails/ && mkdirp src/assets/thumbnails/",
+    "generate:thumbnails": "cross-env NODE_PATH=src babel-node --presets=env,react utils/generateThumbnails.js",
+    "pregenerate:pdf": "rimraf src/assets/pdf/ && mkdirp src/assets/pdf/",
+    "generate:pdf": "cross-env NODE_PATH=src babel-node --presets=env,react utils/generatePdf.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.6",
+    "cross-env": "^5.2.0",
     "eslint": "^5.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.10.0",
+    "fake-dom": "^1.0.4",
+    "mkdirp": "^0.5.1",
     "prettier": "^1.13.7",
-    "puppeteer": "^1.6.0"
+    "puppeteer": "^1.6.0",
+    "rimraf": "^2.6.2"
   }
 }

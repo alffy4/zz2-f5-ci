@@ -12,6 +12,9 @@
 # thumbnails
 src/assets/*
 
+# pdf
+src/pdf/*
+
 # misc
 .DS_Store
 .env.local

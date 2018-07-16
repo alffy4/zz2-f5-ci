@@ -1,20 +1,15 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Home from './Home'
-import NotFound from './NotFound'
-import * as presentations from './presentations'
+import Home from 'scenes/Home'
+import NotFound from 'scenes/NotFound'
+import * as presentations from 'scenes/presentations'
 
 export default () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Home} />
-      {Object.entries(presentations).map(([routeName, Component]) => (
-        <Route
-          key={routeName}
-          exact
-          path={`/${routeName}`}
-          component={Component}
-        />
+      {Object.values(presentations).map(({ name, url, Presentation }) => (
+        <Route key={name} exact path={url} render={Presentation} />
       ))}
       <Route component={NotFound} />
     </Switch>
