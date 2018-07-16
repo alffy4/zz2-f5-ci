@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'react-emotion'
 import * as presentations from 'scenes/presentations'
 import Footer from 'components/Footer'
+import Pdf from 'icons/pdf'
 
 const Container = styled('div')({})
 
@@ -19,6 +20,10 @@ const Item = styled('div')({
   marginRight: 25,
   marginBottom: 20,
   marginLeft: 25,
+})
+
+const ImageContainer = styled('div')({
+  position: 'relative',
 })
 
 const Image = styled('img')({
@@ -48,6 +53,7 @@ const Tags = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
+  marginTop: 5,
 })
 
 const Tag = styled('div')({
@@ -57,21 +63,44 @@ const Tag = styled('div')({
   padding: 5,
 })
 
+const PdfLink = styled('a')({
+  position: 'absolute',
+  bottom: 5,
+  right: 5,
+  padding: 10,
+})
+
+const PdfIcon = styled(Pdf)({
+  height: 24,
+})
+
 export default () => (
   <Container>
     <Items>
       {Object.values(presentations).map(
         ({ name, title, description, url, tags }) => (
           <Item key={name}>
-            <a href={`${url}/`}>
-              <Image
-                src={`${process.env.PUBLIC_URL}/assets/thumbnails/${name}.jpg`}
-                alt={title}
-              />
-            </a>
+            <ImageContainer>
+              <a href={`${url}/`}>
+                <Image
+                  src={`${
+                    process.env.PUBLIC_URL
+                  }/assets/thumbnails/${name}.jpg`}
+                  alt={title}
+                />
+              </a>
+              <PdfLink
+                href={`${process.env.PUBLIC_URL}/assets/pdf/${name}.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <PdfIcon />
+              </PdfLink>
+            </ImageContainer>
+
             <Title>{title}</Title>
-            <Description>{description}</Description>
-            <Tags>{tags.map(tag => <Tag key={tag}>{tag}</Tag>)}</Tags>
+            {description && <Description>{description}</Description>}
+            {tags && <Tags>{tags.map(tag => <Tag key={tag}>{tag}</Tag>)}</Tags>}
           </Item>
         )
       )}
