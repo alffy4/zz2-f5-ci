@@ -10,8 +10,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "yarn generate:thumbnails && yarn generate:pdf",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "pregenerate:thumbnails": "rimraf src/assets/thumbnails/ && mkdirp src/assets/thumbnails/",
