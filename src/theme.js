@@ -2,13 +2,12 @@ import createTheme from 'spectacle/lib/themes/default'
 
 export default createTheme(
   {
-    primary: 'white',
+    primary: '#FAFAFA',
     secondary: '#1F2022',
-    tertiary: '#03A9FC',
+    tertiary: '#2196F3',
     quartenary: '#CECECE',
   },
   {
     primary: 'Montserrat',
-    secondary: 'Helvetica',
   }
 )
