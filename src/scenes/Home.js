@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'react-emotion'
 import * as presentations from 'scenes/presentations'
+import Header from 'components/Header'
 import Footer from 'components/Footer'
 import Pdf from 'icons/pdf'
 
@@ -76,6 +77,7 @@ const PdfIcon = styled(Pdf)({
 
 export default () => (
   <Container>
+    <Header />
     <Items>
       {Object.values(presentations).map(
         ({ name, title, description, url, tags }) => (
