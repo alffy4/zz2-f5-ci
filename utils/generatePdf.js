@@ -17,7 +17,7 @@ const main = async () => {
       process.exit(1)
     }
     await page.pdf({
-      path: `${__dirname}/../src/assets/pdf/${name}.pdf`,
+      path: `${__dirname}/../public/assets/pdf/${name}.pdf`,
       printBackground: true,
       landscape: true,
       format: 'Letter',

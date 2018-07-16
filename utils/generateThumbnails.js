@@ -17,7 +17,8 @@ const main = async () => {
       process.exit(1)
     }
     await page.screenshot({
-      path: `${__dirname}/../src/assets/thumbnails/${name}.jpg`,
+      path: `${__dirname}/../public/assets/thumbnails/${name}.jpg`,
+      type: 'jpeg',
     })
   }
   await browser.close()

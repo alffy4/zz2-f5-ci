@@ -9,11 +9,9 @@
 # production
 /build
 
-# thumbnails
-src/assets/*
-
-# pdf
-src/pdf/*
+# dynamic assets
+public/assets/thumbnails
+public/assets/pdf
 
 # misc
 .DS_Store
