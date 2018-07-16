@@ -70,5 +70,6 @@ export default {
   url: '/presentation-two',
   title: 'Presentation 1',
   description: 'An example presentation',
+  tags: ['tag1', 'tag2'],
   Presentation,
 }
