@@ -17,8 +17,6 @@ module.exports = {
   rules: {
     'react/display-name': 0,
     'react/no-unescaped-entities': 0,
-    'no-unused-vars': ['error', { args: 'none', ignoreRestSiblings: true }],
-
     'prettier/prettier': [
       'error',
       {
