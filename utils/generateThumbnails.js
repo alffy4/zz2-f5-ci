@@ -19,7 +19,7 @@ const main = async () => {
       width: 600,
     })
     await page.screenshot({
-      path: `${__dirname}/../public/assets/thumbnails/${name}.jpg`,
+      path: `${__dirname}/../public/thumbnails/${name}.jpg`,
       type: 'jpeg',
     })
   }

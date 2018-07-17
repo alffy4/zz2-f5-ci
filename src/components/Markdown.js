@@ -1,18 +1,25 @@
-import React, { createElement, Component } from 'react'
+import React, { createElement } from 'react'
 import PropTypes from 'prop-types'
+import styled from 'react-emotion'
 import marksy from 'marksy'
 
 const compile = marksy({
   createElement,
 })
 
-export default class Markdown extends Component {
-  static propTypes = {
-    children: PropTypes.node,
-  }
+const Container = styled('div')({
+  paddingTop: 20,
+  paddingRight: 20,
+  paddingBottom: 20,
+  paddingLeft: 20,
+})
 
-  render() {
-    const { children } = this.props
-    return <div>{compile(children).tree}</div>
-  }
+const Markdown = ({ children }) => (
+  <Container>{compile(children).tree}</Container>
+)
+
+Markdown.propTypes = {
+  children: PropTypes.node,
 }
+
+export default Markdown

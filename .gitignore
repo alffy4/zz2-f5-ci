@@ -10,8 +10,9 @@
 /build
 
 # dynamic assets
-public/assets/thumbnails
-public/assets/pdf
+public/thumbnails
+public/presentations
+public/exercices
 
 # misc
 .DS_Store

@@ -5,6 +5,8 @@ import Header from 'components/Header'
 import Footer from 'components/Footer'
 import Pdf from 'icons/pdf'
 
+const publicUrl = process.env.PUBLIC_URL
+
 const Items = styled('div')({
   display: 'flex',
   flexDirection: 'row',
@@ -72,13 +74,10 @@ export default () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
-                src={`${process.env.PUBLIC_URL}/assets/thumbnails/${name}.jpg`}
-                alt={name}
-              />
+              <Image src={`${publicUrl}/thumbnails/${name}.jpg`} alt={name} />
             </a>
             <PdfLink
-              href={`${process.env.PUBLIC_URL}/assets/pdf/${name}.pdf`}
+              href={`${publicUrl}/presentations/${name}.pdf`}
               target="_blank"
               rel="noopener noreferrer"
             >

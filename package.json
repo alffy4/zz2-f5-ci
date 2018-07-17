@@ -14,9 +14,9 @@
     "build": "react-scripts build",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "pregenerate:thumbnails": "rimraf src/assets/thumbnails/ && mkdirp src/assets/thumbnails/",
+    "pregenerate:thumbnails": "rimraf public/thumbnails/ && mkdirp public/thumbnails/",
     "generate:thumbnails": "cross-env NODE_PATH=src babel-node --presets=env,react utils/generateThumbnails.js",
-    "pregenerate:pdf": "rimraf src/assets/pdf/ && mkdirp src/assets/pdf/",
+    "pregenerate:pdf": "rimraf public/presentations/ && mkdirp public/presentations/ && rimraf public/exercices/ && mkdirp public/exercices/",
     "generate:pdf": "cross-env NODE_PATH=src babel-node --presets=env,react utils/generatePdf.js"
   },
   "devDependencies": {
