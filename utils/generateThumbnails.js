@@ -14,6 +14,10 @@ const main = async () => {
       console.error(`${gotoUrl} unreachable`)
       process.exit(1)
     }
+    await page.setViewport({
+      height: 400,
+      width: 600,
+    })
     await page.screenshot({
       path: `${__dirname}/../public/assets/thumbnails/${name}.jpg`,
       type: 'jpeg',
