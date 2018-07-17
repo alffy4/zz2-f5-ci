@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'react-emotion'
 import Github from 'icons/Github'
 
+const publicUrl = process.env.PUBLIC_URL
+
 const Container = styled('div')({
   display: 'flex',
   justifyContent: 'space-between',
@@ -29,7 +31,7 @@ const GithubIcon = styled(Github)({
 
 export default () => (
   <Container>
-    <a href="/" style={{ textDecoration: 'none' }}>
+    <a href={`${publicUrl}/`} style={{ textDecoration: 'none' }}>
       <Title>Continuous integration</Title>{' '}
     </a>
     <a

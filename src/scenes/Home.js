@@ -63,7 +63,7 @@ export default () => (
         <Item key={name}>
           <ImageContainer>
             <a
-              href={`/presentations/${name}/`}
+              href={`${publicUrl}/presentations/${name}/`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -87,7 +87,10 @@ export default () => (
               >
                 <PdfIcon />
               </a>
-              <a href={`/exercices/${name}/`} style={{ marginLeft: 5 }}>
+              <a
+                href={`${publicUrl}/exercices/${name}/`}
+                style={{ marginLeft: 5 }}
+              >
                 Exercice
               </a>
             </ExerciceContainer>

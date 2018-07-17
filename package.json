@@ -1,5 +1,6 @@
 {
   "name": "zz2-f5-cours",
+  "homepage": "https://julienusson.github.io/zz2-f5-cours",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +18,9 @@
     "pregenerate:thumbnails": "rimraf public/thumbnails/ && mkdirp public/thumbnails/",
     "generate:thumbnails": "cross-env NODE_PATH=src babel-node --presets=env,react utils/generateThumbnails.js",
     "pregenerate:pdf": "rimraf public/presentations/ && mkdirp public/presentations/ && rimraf public/exercices/ && mkdirp public/exercices/",
-    "generate:pdf": "cross-env NODE_PATH=src babel-node --presets=env,react utils/generatePdf.js"
+    "generate:pdf": "cross-env NODE_PATH=src babel-node --presets=env,react utils/generatePdf.js",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -29,6 +32,7 @@
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.10.0",
     "fake-dom": "^1.0.4",
+    "gh-pages": "^1.2.0",
     "mkdirp": "^0.5.1",
     "prettier": "^1.13.7",
     "puppeteer": "^1.6.0",

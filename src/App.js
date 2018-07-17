@@ -5,7 +5,7 @@ import NotFound from 'scenes/NotFound'
 import * as presentations from 'scenes/presentations'
 
 export default () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path="/" component={Home} />
       {Object.values(presentations).map(({ name, Presentation, Exercice }) => (
