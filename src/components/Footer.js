@@ -5,6 +5,9 @@ const Container = styled('div')({
   marginTop: 70,
   marginBottom: 15,
   textAlign: 'center',
+  '@media print': {
+    display: 'none',
+  },
 })
 
 export default () => (

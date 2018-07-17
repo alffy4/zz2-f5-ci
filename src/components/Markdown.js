@@ -2,6 +2,7 @@ import React, { createElement } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'react-emotion'
 import marksy from 'marksy'
+import Layout from 'components/Layout'
 
 const compile = marksy({
   createElement,
@@ -15,7 +16,9 @@ const Container = styled('div')({
 })
 
 const Markdown = ({ children }) => (
-  <Container>{compile(children).tree}</Container>
+  <Layout>
+    <Container>{compile(children).tree}</Container>
+  </Layout>
 )
 
 Markdown.propTypes = {

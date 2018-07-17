@@ -11,6 +11,9 @@ const Container = styled('div')({
   paddingRight: 30,
   paddingBottom: 15,
   paddingLeft: 30,
+  '@media print': {
+    display: 'none',
+  },
 })
 
 const Title = styled('div')({
@@ -26,7 +29,9 @@ const GithubIcon = styled(Github)({
 
 export default () => (
   <Container>
-    <Title>Continuous integration</Title>
+    <a href="/" style={{ textDecoration: 'none' }}>
+      <Title>Continuous integration</Title>{' '}
+    </a>
     <a
       href="https://github.com/JulienUsson/zz2-f5-cours"
       target="_blank"

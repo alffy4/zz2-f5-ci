@@ -1,15 +1,10 @@
 import React from 'react'
 import Markdown from 'components/Markdown'
 
-const Exercice = () => (
+export default () => (
   <Markdown>{`
 # test
 
 test
 `}</Markdown>
 )
-
-export default {
-  name: 'presentation',
-  Exercice,
-}

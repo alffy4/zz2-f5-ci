@@ -1,8 +1,7 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import styled from 'react-emotion'
 import * as presentations from 'scenes/presentations'
-import Header from 'components/Header'
-import Footer from 'components/Footer'
+import Layout from 'components/Layout'
 import Pdf from 'icons/pdf'
 
 const publicUrl = process.env.PUBLIC_URL
@@ -37,18 +36,13 @@ const Image = styled('img')({
     '0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12)',
 })
 
-const Tags = styled('div')({
+const ExerciceContainer = styled('div')({
   display: 'flex',
   flexDirection: 'row',
-  flexWrap: 'wrap',
+  alignItems: 'center',
   marginTop: 5,
-})
-
-const Tag = styled('div')({
-  backgroundColor: '#2196F3',
-  color: '#fff',
-  margin: 3,
-  padding: 5,
+  marginLeft: 3,
+  marginRight: 3,
 })
 
 const PdfLink = styled('a')({
@@ -63,10 +57,9 @@ const PdfIcon = styled(Pdf)({
 })
 
 export default () => (
-  <Fragment>
-    <Header />
+  <Layout>
     <Items>
-      {Object.values(presentations).map(({ name, tags }) => (
+      {Object.values(presentations).map(({ name, Exercice }) => (
         <Item key={name}>
           <ImageContainer>
             <a
@@ -85,10 +78,22 @@ export default () => (
             </PdfLink>
           </ImageContainer>
 
-          {tags && <Tags>{tags.map(tag => <Tag key={tag}>#{tag}</Tag>)}</Tags>}
+          {Exercice && (
+            <ExerciceContainer>
+              <a
+                href={`${publicUrl}/exercices/${name}.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <PdfIcon />
+              </a>
+              <a href={`/exercices/${name}/`} style={{ marginLeft: 5 }}>
+                Exercice
+              </a>
+            </ExerciceContainer>
+          )}
         </Item>
       ))}
     </Items>
-    <Footer />
-  </Fragment>
+  </Layout>
 )
