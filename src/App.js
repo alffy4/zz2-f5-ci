@@ -9,11 +9,16 @@ export default () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Home} />
-      {Object.values(presentations).map(({ name, url, Presentation }) => (
-        <Route key={name} exact path={url} render={Presentation} />
+      {Object.values(presentations).map(({ name, Presentation }) => (
+        <Route
+          key={name}
+          exact
+          path={`/presentations/${name}`}
+          render={Presentation}
+        />
       ))}
-      {Object.values(exercices).map(({ name, url, Exercice }) => (
-        <Route key={name} exact path={url} render={Exercice} />
+      {Object.values(exercices).map(({ name, Exercice }) => (
+        <Route key={name} exact path={`/exercices/${name}`} render={Exercice} />
       ))}
       <Route component={NotFound} />
     </Switch>

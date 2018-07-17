@@ -1,11 +1,9 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import styled from 'react-emotion'
 import * as presentations from 'scenes/presentations'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 import Pdf from 'icons/pdf'
-
-const Container = styled('div')({})
 
 const Items = styled('div')({
   display: 'flex',
@@ -37,19 +35,6 @@ const Image = styled('img')({
     '0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12)',
 })
 
-const Title = styled('div')({
-  marginTop: 5,
-  marginLeft: 3,
-  marginRight: 3,
-})
-
-const Description = styled('div')({
-  fontWeight: 200,
-  marginLeft: 3,
-  marginRight: 3,
-  fontSize: 14,
-})
-
 const Tags = styled('div')({
   display: 'flex',
   flexDirection: 'row',
@@ -76,39 +61,35 @@ const PdfIcon = styled(Pdf)({
 })
 
 export default () => (
-  <Container>
+  <Fragment>
     <Header />
     <Items>
-      {Object.values(presentations).map(
-        ({ name, title, description, url, tags }) => (
-          <Item key={name}>
-            <ImageContainer>
-              <a href={`${url}/`} target="_blank" rel="noopener noreferrer">
-                <Image
-                  src={`${
-                    process.env.PUBLIC_URL
-                  }/assets/thumbnails/${name}.jpg`}
-                  alt={title}
-                />
-              </a>
-              <PdfLink
-                href={`${process.env.PUBLIC_URL}/assets/pdf/${name}.pdf`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <PdfIcon />
-              </PdfLink>
-            </ImageContainer>
+      {Object.values(presentations).map(({ name, tags }) => (
+        <Item key={name}>
+          <ImageContainer>
+            <a
+              href={`/presentations/${name}/`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={`${process.env.PUBLIC_URL}/assets/thumbnails/${name}.jpg`}
+                alt={name}
+              />
+            </a>
+            <PdfLink
+              href={`${process.env.PUBLIC_URL}/assets/pdf/${name}.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <PdfIcon />
+            </PdfLink>
+          </ImageContainer>
 
-            <Title>{title}</Title>
-            {description && <Description>{description}</Description>}
-            {tags && (
-              <Tags>{tags.map(tag => <Tag key={tag}>#{tag}</Tag>)}</Tags>
-            )}
-          </Item>
-        )
-      )}
+          {tags && <Tags>{tags.map(tag => <Tag key={tag}>#{tag}</Tag>)}</Tags>}
+        </Item>
+      ))}
     </Items>
     <Footer />
-  </Container>
+  </Fragment>
 )

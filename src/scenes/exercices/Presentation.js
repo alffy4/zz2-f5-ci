@@ -11,6 +11,5 @@ test
 
 export default {
   name: 'presentation',
-  url: '/exercices/presentation',
   Exercice,
 }
