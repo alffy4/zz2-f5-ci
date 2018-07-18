@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from 'scenes/Home'
 import NotFound from 'scenes/NotFound'
@@ -8,14 +8,24 @@ export default () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path="/" component={Home} />
-      {Object.values(presentations).map(({ name, Presentation, Exercice }) => (
-        <Fragment key={name}>
-          <Route exact path={`/presentations/${name}`} render={Presentation} />
-          {Exercice && (
-            <Route exact path={`/exercices/${name}`} render={Exercice} />
-          )}
-        </Fragment>
+      {Object.values(presentations).map(({ name, Presentation }) => (
+        <Route
+          key={name}
+          exact
+          path={`/presentations/${name}`}
+          render={Presentation}
+        />
       ))}
+      {Object.values(presentations)
+        .filter(({ Exercice }) => Exercice)
+        .map(({ name, Exercice }) => (
+          <Route
+            key={name}
+            exact
+            path={`/exercices/${name}`}
+            render={Exercice}
+          />
+        ))}
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>
