@@ -13,11 +13,12 @@
     "start": "react-scripts start",
     "prebuild": "yarn generate:thumbnails && yarn generate:pdf",
     "build": "react-scripts build",
+    "postbuild": "shx cp build/index.html build/404.html",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "pregenerate:thumbnails": "rimraf public/thumbnails/ && mkdirp public/thumbnails/",
+    "pregenerate:thumbnails": "shx rm -f public/thumbnails/*",
     "generate:thumbnails": "cross-env NODE_PATH=src babel-node --presets=env,react utils/generateThumbnails.js",
-    "pregenerate:pdf": "rimraf public/presentations/ && mkdirp public/presentations/ && rimraf public/exercices/ && mkdirp public/exercices/",
+    "pregenerate:pdf": "shx rm -f public/presentations/* && shx rm -f public/exercices/*",
     "generate:pdf": "cross-env NODE_PATH=src babel-node --presets=env,react utils/generatePdf.js",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
@@ -33,9 +34,8 @@
     "eslint-plugin-react": "^7.10.0",
     "fake-dom": "^1.0.4",
     "gh-pages": "^1.2.0",
-    "mkdirp": "^0.5.1",
     "prettier": "^1.13.7",
     "puppeteer": "^1.6.0",
-    "rimraf": "^2.6.2"
+    "shx": "^0.3.2"
   }
 }
