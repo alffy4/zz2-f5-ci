@@ -11,7 +11,6 @@ import {
   Slide,
   Text,
 } from 'spectacle'
-import Exercice from '../exercices/Presentation'
 
 const Presentation = () => (
   <Deck transition={['zoom', 'slide']} transitionDuration={500} theme={theme}>
@@ -67,7 +66,6 @@ const Presentation = () => (
 )
 
 export default {
-  name: 'presentation',
+  name: 'web-application-introduction',
   Presentation,
-  Exercice,
 }

@@ -1,2 +1,7 @@
-export { default as Presentation } from './Presentation'
-export { default as Presentation2 } from './Presentation2'
+export {
+  default as ContinuousIntegrationIntroduction,
+} from './ContinuousIntegrationIntroduction/ContinuousIntegrationIntroduction'
+
+export {
+  default as WebApplicationIntroduction,
+} from './WebApplicationIntroduction/WebApplicationIntroduction'
