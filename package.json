@@ -17,10 +17,9 @@
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "pregenerate:thumbnails": "shx rm -f public/thumbnails/*",
-    "generate:thumbnails": "cross-env NODE_PATH=src babel-node --presets=env,react utils/generateThumbnails.js",
+    "generate:thumbnails": "cross-env NODE_PATH=src babel-node --presets=env utils/generateThumbnails.js",
     "pregenerate:pdf": "shx rm -f public/presentations/* && shx rm -f public/exercices/*",
-    "generate:pdf": "cross-env NODE_PATH=src babel-node --presets=env,react utils/generatePdf.js",
-    "predeploy": "yarn build",
+    "generate:pdf": "cross-env NODE_PATH=src babel-node --presets=env utils/generatePdf.js",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {

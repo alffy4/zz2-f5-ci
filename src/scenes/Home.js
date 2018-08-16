@@ -3,6 +3,7 @@ import styled from 'react-emotion'
 import * as presentations from 'scenes/presentations'
 import Layout from 'components/Layout'
 import Pdf from 'icons/pdf'
+import snakeCase from 'lodash/snakeCase'
 
 const publicUrl = process.env.PUBLIC_URL
 
@@ -59,44 +60,47 @@ const PdfIcon = styled(Pdf)({
 export default () => (
   <Layout>
     <Items>
-      {Object.values(presentations).map(({ name, Exercice }) => (
-        <Item key={name}>
-          <ImageContainer>
-            <a
-              href={`${publicUrl}/presentations/${name}/`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image src={`${publicUrl}/thumbnails/${name}.jpg`} alt={name} />
-            </a>
-            <PdfLink
-              href={`${publicUrl}/presentations/${name}.pdf`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <PdfIcon />
-            </PdfLink>
-          </ImageContainer>
-
-          {Exercice && (
-            <ExerciceContainer>
+      {Object.entries(presentations).map(([rawName, { Exercice }]) => {
+        const name = snakeCase(rawName)
+        return (
+          <Item key={name}>
+            <ImageContainer>
               <a
-                href={`${publicUrl}/exercices/${name}.pdf`}
+                href={`${publicUrl}/presentations/${name}/`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={`${publicUrl}/thumbnails/${name}.jpg`} alt={name} />
+              </a>
+              <PdfLink
+                href={`${publicUrl}/presentations/${name}.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <PdfIcon />
-              </a>
-              <a
-                href={`${publicUrl}/exercices/${name}/`}
-                style={{ marginLeft: 5 }}
-              >
-                Exercice
-              </a>
-            </ExerciceContainer>
-          )}
-        </Item>
-      ))}
+              </PdfLink>
+            </ImageContainer>
+
+            {Exercice && (
+              <ExerciceContainer>
+                <a
+                  href={`${publicUrl}/exercices/${name}.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <PdfIcon />
+                </a>
+                <a
+                  href={`${publicUrl}/exercices/${name}/`}
+                  style={{ marginLeft: 5 }}
+                >
+                  Exercice
+                </a>
+              </ExerciceContainer>
+            )}
+          </Item>
+        )
+      })}
     </Items>
   </Layout>
 )

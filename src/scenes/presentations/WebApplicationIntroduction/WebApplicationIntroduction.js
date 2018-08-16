@@ -66,6 +66,5 @@ const Presentation = () => (
 )
 
 export default {
-  name: 'web-application-introduction',
   Presentation,
 }
