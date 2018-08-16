@@ -1,6 +1,22 @@
 {
   "main.css": "static/css/main.24d9c64c.css",
   "main.css.map": "static/css/main.24d9c64c.css.map",
-  "main.js": "static/js/main.9a8c7699.js",
-  "main.js.map": "static/js/main.9a8c7699.js.map"
+  "main.js": "static/js/main.1152bff5.js",
+  "main.js.map": "static/js/main.1152bff5.js.map",
+  "static/media/agile.jpg": "static/media/agile.b5422afb.jpg",
+  "static/media/branch.png": "static/media/branch.0fae18c3.png",
+  "static/media/commit.png": "static/media/commit.9beec204.png",
+  "static/media/decentralized.png": "static/media/decentralized.1fb5630d.png",
+  "static/media/diff.png": "static/media/diff.da11636f.png",
+  "static/media/get.png": "static/media/get.9de2529d.png",
+  "static/media/gitflow.png": "static/media/gitflow.42fd0cda.png",
+  "static/media/gitlabCiExempleImg.png": "static/media/gitlabCiExempleImg.3c9f1fe2.png",
+  "static/media/html.png": "static/media/html.943e9b3e.png",
+  "static/media/http.png": "static/media/http.d5f44220.png",
+  "static/media/merge.png": "static/media/merge.01c604a5.png",
+  "static/media/post.png": "static/media/post.73e5678c.png",
+  "static/media/pull.png": "static/media/pull.9832994d.png",
+  "static/media/push.png": "static/media/push.f0106a8e.png",
+  "static/media/rebase.png": "static/media/rebase.495cf990.png",
+  "static/media/revert.png": "static/media/revert.3e8e9e27.png"
 }
