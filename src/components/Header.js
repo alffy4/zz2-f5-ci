@@ -35,7 +35,7 @@ export default () => (
       <Title>Continuous integration</Title>{' '}
     </a>
     <a
-      href="https://github.com/JulienUsson/zz2-f5-cours"
+      href="https://github.com/JulienUsson/zz2-f5-ci"
       target="_blank"
       rel="noopener noreferrer"
     >

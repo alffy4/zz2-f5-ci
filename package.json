@@ -1,6 +1,6 @@
 {
-  "name": "zz2-f5-cours",
-  "homepage": "https://julienusson.github.io/zz2-f5-cours",
+  "name": "zz2-f5-ci",
+  "homepage": "https://julienusson.github.io/zz2-f5-ci",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
