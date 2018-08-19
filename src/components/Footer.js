@@ -16,7 +16,7 @@ export default () => (
     <span role="img" aria-label="Heart">
       ♥️
     </span>{' '}
-    by <a href="https://julienusson.github.io/">Julien Usson</a> using{' '}
+    by <a href="https://julien.usson.me/">Julien Usson</a> using{' '}
     <a href="https://reactjs.org/">React</a> and{' '}
     <a href="https://github.com/FormidableLabs/spectacle/">Spectacle</a>
   </Container>
