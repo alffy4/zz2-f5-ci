@@ -351,6 +351,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
       },
       table: {
         width: '100%',
+        marginTop: 50,
       },
       text: {
         color: colors.secondary,
