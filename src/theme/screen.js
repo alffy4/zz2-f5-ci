@@ -227,8 +227,8 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         textAlign: 'center',
       },
       codePane: {
-        margin: 'auto',
-        fontSize: '0.8rem',
+        margin: '1rem auto',
+        fontSize: '1.6rem',
         fontWeight: 'normal',
         minWidth: '100%',
         maxWidth: 800,
@@ -297,7 +297,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         },
         h4: {
           color: colors.tertiary,
-          fontSize: '3.82rem',
+          fontSize: '3rem',
           fontFamily: fonts.primary,
           lineHeight: 1,
           fontWeight: 'bold',
@@ -331,7 +331,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         textDecoration: 'none',
       },
       listItem: {
-        fontSize: '2.66rem',
+        fontSize: '2rem',
       },
       list: {
         textAlign: 'left',
@@ -354,10 +354,11 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         marginTop: 50,
       },
       text: {
+        textAlign: 'left',
         color: colors.secondary,
-        fontSize: '2.66rem',
+        fontSize: '2rem',
         fontFamily: fonts.primary,
-        margin: '0.25rem auto',
+        margin: '1rem auto',
       },
     },
   }

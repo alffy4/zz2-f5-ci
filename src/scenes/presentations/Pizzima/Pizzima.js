@@ -1,17 +1,6 @@
 import React from 'react'
 import theme from 'theme'
-import {
-  BlockQuote,
-  Cite,
-  Deck,
-  Heading,
-  Image,
-  List,
-  ListItem,
-  Quote,
-  Slide,
-  Text,
-} from 'spectacle'
+import { Deck, Heading, Image, List, ListItem, Slide, Text } from 'spectacle'
 import pizzaImg from './pizza.jpg'
 
 const Presentation = () => (
