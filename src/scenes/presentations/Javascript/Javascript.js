@@ -17,7 +17,9 @@ const Presentation = () => (
   <Deck theme={theme}>
     <Slide>
       <Heading fit>Javascript</Heading>
-      <Text fit>Javascript everywhere</Text>
+      <Text fit textAlign="center">
+        Javascript everywhere
+      </Text>
     </Slide>
   </Deck>
 )

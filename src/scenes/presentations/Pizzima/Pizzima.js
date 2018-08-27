@@ -7,7 +7,9 @@ const Presentation = () => (
   <Deck theme={theme}>
     <Slide>
       <Heading fit>PiZZima</Heading>
-      <Text fit>Une app pour les ZZ par les ZZ</Text>
+      <Text fit textAlign="center">
+        Une app pour les ZZ par les ZZ
+      </Text>
     </Slide>
     <Slide>
       <Image src={pizzaImg} height="100%" />

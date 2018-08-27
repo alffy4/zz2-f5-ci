@@ -27,7 +27,7 @@ const Presentation = () => (
   <Deck theme={theme}>
     <Slide>
       <Heading>Git</Heading>
-      <Text>fichier.old.older.oldest</Text>
+      <Text textAlign="center">fichier.old.older.oldest</Text>
     </Slide>
     <Slide>
       <BlockQuote>

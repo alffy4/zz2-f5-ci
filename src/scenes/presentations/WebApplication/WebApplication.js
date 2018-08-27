@@ -27,7 +27,9 @@ const Presentation = () => (
   <Deck theme={theme}>
     <Slide>
       <Heading fit>Les applications web</Heading>
-      <Text fit>GET /cours HTTP/1.1</Text>
+      <Text fit textAlign="center">
+        GET /cours HTTP/1.1
+      </Text>
     </Slide>
     <Slide>
       <BlockQuote>

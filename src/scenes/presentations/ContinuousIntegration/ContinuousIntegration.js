@@ -19,7 +19,9 @@ const Presentation = () => (
   <Deck theme={theme}>
     <Slide>
       <Heading fit>Intégration Continue</Heading>
-      <Text fit>Tester, c'est douter</Text>
+      <Text fit textAlign="center">
+        Tester, c'est douter
+      </Text>
     </Slide>
     <Slide>
       <BlockQuote>
