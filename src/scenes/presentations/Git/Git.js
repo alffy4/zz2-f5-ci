@@ -12,6 +12,7 @@ import {
   Slide,
   Text,
 } from 'spectacle'
+import Exercice from 'scenes/exercices/Git'
 import commitImg from './commit.png'
 import diffImg from './diff.png'
 import revertImg from './revert.png'
@@ -126,4 +127,5 @@ const Presentation = () => (
 
 export default {
   Presentation,
+  Exercice,
 }

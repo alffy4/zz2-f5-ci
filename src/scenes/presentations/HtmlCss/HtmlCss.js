@@ -14,6 +14,7 @@ import {
   TableRow,
   TableItem,
 } from 'spectacle'
+import Exercice from 'scenes/exercices/HtmlCss'
 import htmlImg from './html.png'
 import cssImg from './css.png'
 import materializeImg from './materialize.gif'
@@ -241,4 +242,5 @@ p {
 
 export default {
   Presentation,
+  Exercice,
 }
