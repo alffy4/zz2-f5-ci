@@ -31,7 +31,6 @@
     "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.10.0",
-    "fake-dom": "^1.0.4",
     "gh-pages": "^1.2.0",
     "prettier": "^1.13.7",
     "puppeteer": "^1.6.0",
