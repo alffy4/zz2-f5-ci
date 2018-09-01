@@ -57,7 +57,7 @@ const Presentation = () => (
       <Text>Ce sont des balises XML représentant des composants</Text>
       <CodePane
         lang="html"
-        source="<nom-de-l-element>contenue...</nom-de-l-element>"
+        source="<nom-de-l-element>contenu...</nom-de-l-element>"
       />
       <Text>où lorsqu'ils sont vide</Text>
       <CodePane lang="html" source="<nom-de-l-element />" />
@@ -71,7 +71,7 @@ const Presentation = () => (
       <CodePane
         lang="html"
         source={`<nom-de-l-element attribut-1="val1" attribut-2="val2">
-  contenue...
+  contenu...
 </nom-de-l-element>`}
       />
     </Slide>
@@ -90,23 +90,6 @@ const Presentation = () => (
         source={
           '<h1>Laborum est commodo anim qui</h1>\n...\n<h6>Laborum est commodo anim qui</h6>'
         }
-      />
-    </Slide>
-    <Slide>
-      <Text>Les listes</Text>
-      <CodePane
-        lang="html"
-        source={`\
-<ul>
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-</ul>`}
-      />
-      <Text>Les images</Text>
-      <CodePane
-        lang="html"
-        source={`<img src="image.jpg" alt="description">`}
       />
     </Slide>
     <Slide>
