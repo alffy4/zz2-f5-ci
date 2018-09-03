@@ -12,6 +12,7 @@ import {
   Slide,
   Text,
 } from 'spectacle'
+import Exercice from '../../exercices/Javascript'
 import transpilateurImg from './transpilateur.png'
 import asyncImg from './async.png'
 import varsImg from './vars.png'
@@ -21,6 +22,8 @@ import structuresImg from './structures.png'
 import fonctionsImg from './fonctions.png'
 import promisesImg from './promises.png'
 import functionalImg from './functional.png'
+import nodeImg from './node.png'
+import packageImg from './package.png'
 
 const Presentation = () => (
   <Deck theme={theme}>
@@ -126,18 +129,24 @@ const Presentation = () => (
       <Image src={functionalImg} />
     </Slide>
     <Slide>
-      <Heading size="4">Quelques liens utiles</Heading>
+      <Heading size="4">Nodes JS</Heading>
       <List>
-        <ListItem>
-          https://developer.mozilla.org/fr/docs/Web/JavaScript
-        </ListItem>
-        <ListItem>https://www.w3schools.com/js/default.asp</ListItem>
-        <ListItem>https://codesandbox.io/s/vanilla</ListItem>
+        <ListItem>Interpréteur JavaScript</ListItem>
+        <ListItem>Utilise le V8</ListItem>
+        <ListItem>Créé en 2009</ListItem>
+        <ListItem>Utilisé avec NPM</ListItem>
       </List>
+    </Slide>
+    <Slide>
+      <Image src={nodeImg} />
+    </Slide>
+    <Slide>
+      <Image src={packageImg} />
     </Slide>
   </Deck>
 )
 
 export default {
   Presentation,
+  Exercice,
 }
