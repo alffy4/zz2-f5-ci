@@ -68,7 +68,7 @@ const Presentation = () => (
         <ListItem>lint: le code est ok</ListItem>
         <ListItem>...</ListItem>
       </List>
-      <Text fit>
+      <Text textAlign="center" fit>
         La branche est prête a être mergée sans beaucoup de risque !
       </Text>
     </Slide>

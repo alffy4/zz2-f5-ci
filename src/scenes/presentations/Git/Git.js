@@ -73,7 +73,7 @@ const Presentation = () => (
       <Image src={revertImg} width="100%" />
     </Slide>
     <Slide>
-      <Text>Git est décentralisé</Text>
+      <Text textAlign="center">Git est décentralisé</Text>
     </Slide>
     <Slide>
       <Image src={decentralizedImg} width="100%" />
@@ -85,7 +85,9 @@ const Presentation = () => (
       <Image src={pullImg} width="100%" />
     </Slide>
     <Slide>
-      <Text>Organiser ses modifications avec les branches</Text>
+      <Text textAlign="center">
+        Organiser ses modifications avec les branches
+      </Text>
     </Slide>
     <Slide>
       <Image src={branchImg} width="100%" />
@@ -117,7 +119,7 @@ const Presentation = () => (
     </Slide>
     <Slide>
       <Heading>Git Flow (light)</Heading>
-      <Text>Structurer ses branches efficacement</Text>
+      <Text textAlign="center">Structurer ses branches efficacement</Text>
     </Slide>
     <Slide>
       <Image src={gitflowImg} width="100%" />
