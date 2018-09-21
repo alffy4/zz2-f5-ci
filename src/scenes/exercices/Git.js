@@ -8,7 +8,7 @@ export default () => (
 
 ## Partie 1 : La bonne vieille ligne de commande !
 
-Rendez-vous sur [Katacoda](https://katacoda.com/courses/git), et faîtes les 9 exercices sur Git.
+Rendez-vous sur [Katacoda](https://katacoda.com/courses/git) [EN], et faîtes les 9 exercices sur Git.
 
 ## Partie 2 : Gitkraken
 
@@ -16,8 +16,15 @@ En 2018, Gitkraken, c'est quand même plus pratique...
 
 Ouvrez Gitkraken, et refaite la partie 1 via l'interface graphique !
 
-## Partie 3 : Gitlab
+## Partie 3 : Github
 
-Allez sur [Gitlab](https://gitlab.com/) pour vous créer un compte, cela sera utile pour la suite des TPs.
+Allez sur [Github](https://github.com/) pour vous créer un compte, cela sera utile pour la suite des TPs et pour votre cv.
+
+## Autres ressources
+
+ * [Grafikart](https://www.grafikart.fr/formations/git) [FR]
+ * [putaindecode](https://putaindecode.io/fr/articles/git/) [FR]
+ * [gitflow cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/) [EN]
+ * [git/gitflow/ci](https://jp-lambert.me/git-gitflow-et-lint%C3%A9gration-continue-pour-les-nuls-a0b2f0b7c788) [FR]
 `}</Markdown>
 )
