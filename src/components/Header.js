@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'react-emotion'
 import Github from 'icons/Github'
+import AddComment from 'icons/AddComment'
 
 const publicUrl = process.env.PUBLIC_URL
 
@@ -29,17 +30,32 @@ const GithubIcon = styled(Github)({
   color: '#fff',
 })
 
+const AddCommentIcon = styled(AddComment)({
+  height: 32,
+  color: '#fff',
+  marginRight: 20,
+})
+
 export default () => (
   <Container>
     <a href={`${publicUrl}/`} style={{ textDecoration: 'none' }}>
       <Title>Continuous integration</Title>{' '}
     </a>
-    <a
-      href="https://github.com/JulienUsson/zz2-f5-ci"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <GithubIcon />
-    </a>
+    <div>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfckP7ZScyJC_OSvDR2ljaP-8wzxNDE8isVM8xC92lB6q-0Vw/viewform?usp=sf_link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <AddCommentIcon />
+      </a>
+      <a
+        href="https://github.com/JulienUsson/zz2-f5-ci"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <GithubIcon />
+      </a>
+    </div>
   </Container>
 )
