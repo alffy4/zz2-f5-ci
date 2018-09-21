@@ -16,7 +16,7 @@ import {
 const Presentation = () => (
   <Deck theme={theme}>
     <Slide>
-      <Heading fit>Kubernetes</Heading>
+      <Heading fit>Docker</Heading>
     </Slide>
   </Deck>
 )

@@ -7,25 +7,24 @@ export {
 
 // Cours 2
 export { default as WebApplication } from './WebApplication/WebApplication'
-export { default as HtmlCss } from './HtmlCss/HtmlCss'
 
 // Cours 3
-export { default as Javascript } from './Javascript/Javascript'
+export { default as HtmlCss } from './HtmlCss/HtmlCss'
 
 // Cours 4
-export { default as FirstApp } from './FirstApp/FirstApp'
+export { default as Javascript } from './Javascript/Javascript'
 
 // Cours 5
-export { default as Authentication } from './Authentication/Authentication'
+export { default as FirstApp } from './FirstApp/FirstApp'
 
 // Cours 6
-export { default as UnitTesting } from './UnitTesting/UnitTesting'
+export { default as Authentication } from './Authentication/Authentication'
 
 // Cours 7
-export { default as GitlabCi } from './GitlabCi/GitlabCi'
+export { default as Testing } from './Testing/Testing'
 
 // Cours 8
-export { default as EndToEndTesting } from './EndToEndTesting/EndToEndTesting'
+export { default as CircleCi } from './CircleCi/CircleCi'
 
 // Cours 9
-export { default as Kubernetes } from './Kubernetes/Kubernetes'
+export { default as Docker } from './Docker/Docker'

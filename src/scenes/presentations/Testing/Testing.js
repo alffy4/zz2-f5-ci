@@ -16,7 +16,7 @@ import {
 const Presentation = () => (
   <Deck theme={theme}>
     <Slide>
-      <Heading fit>Gitlab CI</Heading>
+      <Heading fit>Les tests</Heading>
     </Slide>
   </Deck>
 )
