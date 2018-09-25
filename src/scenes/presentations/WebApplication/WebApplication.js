@@ -22,6 +22,7 @@ import postImg from './post.png'
 import monolithImg from './monolith.png'
 import frontBackImg from './frontBack.png'
 import microservicesImg from './microservices.png'
+import serverlessImg from './serverless.png'
 
 const Presentation = () => (
   <Deck theme={theme}>
@@ -133,7 +134,7 @@ const Presentation = () => (
     </Slide>
     <Slide>
       <Heading size="4" textAlign="center">
-        Séparation front/back
+        Séparation front/back avec back-end monolithique
       </Heading>
       <Image src={frontBackImg} width="100%" />
     </Slide>
@@ -142,6 +143,12 @@ const Presentation = () => (
         Les micro services
       </Heading>
       <Image src={microservicesImg} width="100%" />
+    </Slide>
+    <Slide>
+      <Heading size="4" textAlign="center">
+        Le Serverless
+      </Heading>
+      <Image src={serverlessImg} width="100%" />
     </Slide>
   </Deck>
 )
