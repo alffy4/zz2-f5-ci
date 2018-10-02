@@ -6,32 +6,19 @@ export default () => (
   <Markdown>{`
 # TP n°2 : HTML et CSS !
 
-N'hésitez pas a regarder la documentation sur [w3schools](https://www.w3schools.com/).
+Commencez par regarder la documentation de [Materialize](https://materializecss.com/) [EN].
 
-## Débutants :
+N'oubliez pas de regarder la documentation sur [w3schools](https://www.w3schools.com/) [EN] (lire de la documentation n'est pas une honte au contraire).
 
-Découvrez l'HTML et le CSS via les cours de [w3schools](https://www.w3schools.com/).
+C'est la bibliothèque que nous allons utiliser lors des prochains TPs, elle s'inspire du material design de Google dont voici les spécifications : [Material Design](https://material.io/) [EN]
 
- - Faites les tutos [HTML](https://www.w3schools.com/html/html_basic.asp) de \`HTML Basic\` à \`HTML id\`
- - Faites les tutos [CSS](https://www.w3schools.com/css/css_syntax.asp) de \`CSS Syntax\` à \`CSS Display\`
+Ensuite designez et codez les premières pages de l'application. N'hésitez pas a créer un dépot sur Github pour héberger ce code.
 
-Maintenant, vous êtes enfin prêt à faire la partie suivante !
+Essayez d'être créatif mais si vous manquez d'inspiration, rendez vous sur [UpLabs](https://www.uplabs.com/) [EN]
 
-## Intermédiaires : 
+## Autres ressources
 
-Découvrez les flexboxes avec ce [jeu](https://flexboxfroggy.com/#fr).
-
-Faites les premiers exercices, jusqu'a ce que vous vous sentiez à l'aise avec les flexboxes.
-
-Maintenant, vous êtes enfin prêt à faire la partie suivante !
-
-## Avancés :
-
-Commencez le sprint n°1 et attaquez le front.
-
-Pour cela, commencez par lire la doc de [Materialize](https://materializecss.com/).
-
-Ensuite designez et codez les premières pages de l'application.
-
+ * [Open Classrooms](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3) [FR]
+ * [w3schools](https://www.w3schools.com/) [EN]
 `}</Markdown>
 )

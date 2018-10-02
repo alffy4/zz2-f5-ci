@@ -84,12 +84,24 @@ const Presentation = () => (
         lang="html"
         source={`<p>Laborum est commodo anim qui. Commodo qui sunt duis minim excepteur aliquip consectetur.</p>`}
       />
-      <Text>Les titles</Text>
+      <Text>Les titres</Text>
       <CodePane
         lang="html"
         source={
           '<h1>Laborum est commodo anim qui</h1>\n...\n<h6>Laborum est commodo anim qui</h6>'
         }
+      />
+    </Slide>
+    <Slide>
+      <Text>Les images</Text>
+      <CodePane
+        lang="html"
+        source={`<img src="image.jpg" alt="description">`}
+      />
+      <Text>Les liens</Text>
+      <CodePane
+        lang="html"
+        source={`<a href="/page-deux.html">cliquez ici</a>`}
       />
     </Slide>
     <Slide>
@@ -103,10 +115,24 @@ const Presentation = () => (
     <li>Milk</li>
 </ul>`}
       />
-      <Text>Les images</Text>
+    </Slide>
+    <Slide>
+      <Text>Les tableaux</Text>
       <CodePane
         lang="html"
-        source={`<img src="image.jpg" alt="description">`}
+        source={`\
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+</table>`}
       />
     </Slide>
     <Slide>
