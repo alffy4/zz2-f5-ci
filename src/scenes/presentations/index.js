@@ -25,6 +25,3 @@ export { default as Testing } from './Testing/Testing'
 
 // Cours 8
 export { default as CircleCi } from './CircleCi/CircleCi'
-
-// Cours 9
-export { default as Docker } from './Docker/Docker'
