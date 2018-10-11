@@ -23,7 +23,9 @@ const Presentation = () => (
   <Deck theme={theme}>
     <Slide>
       <Heading fit>HTML / CSS</Heading>
-      <Text textAlign="center">Les bases du web</Text>
+      <Text textAlign="center" fit>
+        Les bases du web
+      </Text>
     </Slide>
     <Slide>
       <Heading size="4" textAlign="center">

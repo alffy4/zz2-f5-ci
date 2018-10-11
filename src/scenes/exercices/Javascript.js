@@ -41,7 +41,7 @@ Ecrire un script qui calcule la somme d'un tableau.
 
 Ecrire un script utilisant la bibliothèque [Chalk](https://github.com/chalk/chalk) qui écrit chaque élément du tableau suivant dans la couleur de l'élément.
 
-\`\`\`const colors = ["blue", "red", "green", "yellow", "orange"] \`\`\`
+\`\`\`const colors = ["blue", "red", "green", "yellow", "cyan"] \`\`\`
 
   * En utilisant for of
   * En utilisant .forEach()

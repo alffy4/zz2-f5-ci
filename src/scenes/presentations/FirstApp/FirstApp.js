@@ -24,7 +24,9 @@ const Presentation = () => (
   <Deck theme={theme}>
     <Slide>
       <Heading fit>Une première application web</Heading>
-      <Text textAlign="center">NodeJS / ExpressJS / whateverJS</Text>
+      <Text textAlign="center" fit>
+        NodeJS / ExpressJS / whateverJS
+      </Text>
     </Slide>
     <Slide>
       <Image src={introImg} />

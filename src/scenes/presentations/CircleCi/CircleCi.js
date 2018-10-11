@@ -17,6 +17,9 @@ const Presentation = () => (
   <Deck theme={theme}>
     <Slide>
       <Heading fit>Circle CI</Heading>
+      <Text textAlign="center" fit>
+        C'est pas trop tôt...
+      </Text>
     </Slide>
   </Deck>
 )

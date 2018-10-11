@@ -16,7 +16,10 @@ import {
 const Presentation = () => (
   <Deck theme={theme}>
     <Slide>
-      <Heading fit>l'authentification avec OAuth</Heading>
+      <Heading fit>l'authentification</Heading>
+      <Text textAlign="center" fit>
+        YOU SHALL NOT PASS !!!
+      </Text>
     </Slide>
   </Deck>
 )
