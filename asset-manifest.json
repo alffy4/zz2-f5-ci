@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.6f9698f2.css",
   "main.css.map": "static/css/main.6f9698f2.css.map",
-  "main.js": "static/js/main.a0523328.js",
-  "main.js.map": "static/js/main.a0523328.js.map",
+  "main.js": "static/js/main.f4194104.js",
+  "main.js.map": "static/js/main.f4194104.js.map",
   "static/media/agile.jpg": "static/media/agile.b5422afb.jpg",
   "static/media/async.png": "static/media/async.a04e61c3.png",
   "static/media/boucles.png": "static/media/boucles.385a4c7e.png",
@@ -13,6 +13,7 @@
   "static/media/decentralized.png": "static/media/decentralized.1fb5630d.png",
   "static/media/diff.png": "static/media/diff.da11636f.png",
   "static/media/ejs.png": "static/media/ejs.a44849f2.png",
+  "static/media/express.png": "static/media/express.8ef63b84.png",
   "static/media/fonctions.png": "static/media/fonctions.7517dc16.png",
   "static/media/frontBack.png": "static/media/frontBack.f8ef22fd.png",
   "static/media/functional.png": "static/media/functional.4e690147.png",
