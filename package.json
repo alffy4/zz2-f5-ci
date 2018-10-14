@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "yarn generate:thumbnails && yarn generate:pdf",
+    "prebuild": "yarn generate:all",
     "build": "react-scripts build",
     "postbuild": "shx cp build/index.html build/404.html",
     "lint": "eslint src",
@@ -20,6 +20,7 @@
     "generate:thumbnails": "cross-env NODE_PATH=src babel-node --presets=env utils/generateThumbnails.js",
     "pregenerate:pdf": "shx rm -f public/presentations/* && shx rm -f public/exercices/*",
     "generate:pdf": "cross-env NODE_PATH=src babel-node --presets=env utils/generatePdf.js",
+    "generate:all": "yarn generate:thumbnails && yarn generate:pdf",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {

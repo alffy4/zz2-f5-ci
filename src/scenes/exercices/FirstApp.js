@@ -36,6 +36,7 @@ Utiliser [JSON.parse()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Ref
 
  * [NodeJS](https://nodejs.org/api) [EN]
  * [ExpressJS](https://expressjs.com/fr/) [FR]
+ * [EJS](http://ejs.co/) [EN]
  * [OpenClassroom](https://openclassrooms.com/fr/courses/1056721-des-applications-ultra-rapides-avec-node-js/1057503-le-framework-express-js) [FR]
 `}</Markdown>
 )

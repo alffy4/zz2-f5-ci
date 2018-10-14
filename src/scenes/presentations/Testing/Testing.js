@@ -12,6 +12,7 @@ import {
   Slide,
   Text,
 } from 'spectacle'
+import Exercice from '../../exercices/Testing'
 
 const Presentation = () => (
   <Deck theme={theme}>
@@ -21,9 +22,13 @@ const Presentation = () => (
         Tester, c'est douter
       </Text>
     </Slide>
+    <Slide>
+      <Heading fit>Tester c'est quoi?</Heading>
+    </Slide>
   </Deck>
 )
 
 export default {
   Presentation,
+  Exercice,
 }
