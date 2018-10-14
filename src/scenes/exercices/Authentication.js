@@ -6,10 +6,18 @@ export default () => (
   <Markdown>{`
 # TP n°5 : Authentification !
 
-Ajouter une authentification à votre site :
- * Connexion
- * Inscription
- * Rôles (Admin, User)
+## Installer le middleware de session
+
+ * Installer le middleware avec \`npm install --save express-session\`
+ * Importer le dans \`index.js\` avec \`import session from 'express-session'\`
+ * Installer le middleware avec \`app.use(session({secret: "une chaîne de caractères", cookie: { maxAge: 60000 }}))\`
+
+## Mettre en place l'authentification
+
+En utilisant les slides de cours et la [doc](https://github.com/expressjs/session), implémenter :
+ * La connexion
+ * L'inscription
+ * Des rôles (Admin, User)
 
 ## Autres ressources
 

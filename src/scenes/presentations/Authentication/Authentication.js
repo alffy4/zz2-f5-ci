@@ -15,6 +15,7 @@ import {
 } from 'spectacle'
 import Exercice from '../../exercices/Authentication'
 import sessionImg from './session.png'
+import expressImg from './express.png'
 import oauth2Img from './oauth2.png'
 import jwtImg from './jwt.png'
 
@@ -41,6 +42,9 @@ const Presentation = () => (
     </Slide>
     <Slide>
       <Image src={sessionImg} />
+    </Slide>
+    <Slide>
+      <Image src={expressImg} />
     </Slide>
     <Slide>
       <Heading fit>OAuth2</Heading>
